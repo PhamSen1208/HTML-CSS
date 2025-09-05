@@ -1,0 +1,17 @@
+mixin tourItem(image, price, title,review,reviewCount,duration,tourPrice) 
+
+    div.tour
+        div.tour-top
+            img.tour-image(src= image , alt='this-is-a-picture')
+            span.tour-price= price
+        div.tour-content
+            h3.tour-title=title 
+            div.tour-rating
+                div.tour-reviews
+                    div.tour-starts
+                        img(src='./chemchemproject/images/star.png' alt='a star')
+                    div.tour-review-count
+                        span= review
+                            |   (#{reviewCount} reviews)
+                span.tour-duration Duration: #{duration} hours
+            a.tour-button(href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer') Tours Price: $#{tourPrice}
