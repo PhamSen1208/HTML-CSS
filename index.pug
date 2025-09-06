@@ -11,10 +11,11 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet")
-        link(rel="stylesheet" href="./style.css")
+        link(rel="stylesheet" href="../chemchemproject/styles/popular.css")
     body 
-        div.tour-list-container
-            div.tour-list
-                +tourItem('./chemchemproject/images/img1.png','From $61',"Thailands Ayutthaya Temples Cruise from Bangkok", 4.8,12,9,61)
-                +tourItem('./chemchemproject/images/img2.png','From $70', "FLoating Markets Day Trip from Bangkok",4.8,12,9,61)
-                +tourItem('./chemchemproject/images/img3.png','From $60',"Bangkok Dinner Cruise on the Chao Phraya River",4.8,12,9,61)
+        .container
+            .popular-list 
+                +popularItem()
+                +popularItem()
+                +popularItem()
+                +popularItem()

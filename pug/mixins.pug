@@ -1,17 +1,32 @@
-mixin tourItem(image, price, title,review,reviewCount,duration,tourPrice) 
+//- mixin tourItem(image, price, title,review,reviewCount,duration,tourPrice) 
 
-    div.tour
-        div.tour-top
-            img.tour-image(src= image , alt='this-is-a-picture')
-            span.tour-price= price
-        div.tour-content
-            h3.tour-title=title 
-            div.tour-rating
-                div.tour-reviews
-                    div.tour-starts
-                        img(src='./chemchemproject/images/star.png' alt='a star')
-                    div.tour-review-count
-                        span= review
-                            |   (#{reviewCount} reviews)
-                span.tour-duration Duration: #{duration} hours
-            a.tour-button(href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer') Tours Price: $#{tourPrice}
+//-     div.tour
+//-         div.tour-top
+//-             img.tour-image(src= image , alt='this-is-a-picture')
+//-             span.tour-price= price
+//-         div.tour-content
+//-             h3.tour-title=title 
+//-             div.tour-rating
+//-                 div.tour-reviews
+//-                     div.tour-starts
+//-                         img(src='./chemchemproject/images/star.png' alt='a star')
+//-                     div.tour-review-count
+//-                         span= review
+//-                             |   (#{reviewCount} reviews)
+//-                 span.tour-duration Duration: #{duration} hours
+//-             a.tour-button(href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer') Tours Price: $#{tourPrice}
+
+
+mixin popularItem()
+            .popular-item 
+                .popular-image 
+                    .popular-overlay
+                    img(src="https://images.unsplash.com/photo-1603269231725-4ea1da7d02fd?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="popular1").popular-img
+                    span.popular-lable Must see 
+
+                .popular-content 
+                    span.popular-time Sep 20 10:00 AM - 1:00 PM
+                    h3.popular-title The Grand Place
+                    .popular-reviews 
+                        img(src='./chemchemproject/images/star.png' alt='a star').popular-star
+                        span 4.0 (12 reviews)
